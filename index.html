@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Shri Sundaram Agencies – Singer Sewing Machines, Tirunelveli</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{--red:#CC0000;--dark-red:#a00000;--saffron:#FF6B00;--gold:#FFA500;--dark:#1a1a1a;--gray:#555;--light:#f9f6f2;--white:#fff;}
+body{font-family:'Segoe UI',sans-serif;color:var(--dark);background:var(--white);}
+a{text-decoration:none;color:inherit;}
+nav{background:var(--red);padding:0 5%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;box-shadow:0 2px 10px rgba(0,0,0,.3);}
+.nav-logo{display:flex;align-items:center;gap:12px;padding:10px 0;}
+.nav-logo svg{flex-shrink:0;}
+.nav-logo .brand{color:var(--white);}
+.nav-logo .brand h1{font-size:1rem;font-weight:700;line-height:1.2;}
+.nav-logo .brand p{font-size:.7rem;opacity:.85;}
+.nav-links{display:flex;gap:24px;}
+.nav-links a{color:rgba(255,255,255,.9);font-size:.85rem;font-weight:500;padding:6px 0;border-bottom:2px solid transparent;transition:.2s;}
+.nav-links a:hover{color:#fff;border-color:#fff;}
+.nav-cta{background:var(--white);color:var(--red);padding:8px 18px;border-radius:20px;font-weight:700;font-size:.85rem;transition:.2s;}
+.nav-cta:hover{background:var(--gold);color:#fff;}
+.hero{background:linear-gradient(135deg,#8B0000 0%,#CC0000 40%,#FF6B00 100%);color:var(--white);padding:80px 5% 70px;display:flex;align-items:center;gap:40px;min-height:88vh;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");}
+.hero-text{flex:1;min-width:280px;z-index:1;}
+.hero-badge{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);padding:6px 16px;border-radius:20px;font-size:.8rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:20px;}
+.hero h2{font-size:clamp(1.8rem,4vw,3rem);font-weight:800;line-height:1.2;margin-bottom:16px;}
+.hero h2 span{color:var(--gold);}
+.hero p{font-size:1.05rem;opacity:.9;line-height:1.7;max-width:520px;margin-bottom:32px;}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
+.btn-primary{background:var(--white);color:var(--red);padding:14px 30px;border-radius:30px;font-weight:700;font-size:1rem;transition:.3s;box-shadow:0 4px 15px rgba(0,0,0,.2);}
+.btn-primary:hover{background:var(--gold);color:#fff;transform:translateY(-2px);}
+.btn-secondary{background:transparent;color:var(--white);padding:14px 30px;border-radius:30px;font-weight:600;font-size:1rem;border:2px solid rgba(255,255,255,.6);transition:.3s;}
+.btn-secondary:hover{background:rgba(255,255,255,.15);border-color:#fff;}
+.hero-visual{flex:1;min-width:240px;display:flex;justify-content:center;z-index:1;}
+.machine-card{background:rgba(255,255,255,.12);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.2);border-radius:20px;padding:32px;text-align:center;max-width:320px;}
+.machine-icon{font-size:7rem;margin-bottom:16px;filter:drop-shadow(0 4px 12px rgba(0,0,0,.3));}
+.machine-card h3{font-size:1.2rem;font-weight:700;margin-bottom:6px;}
+.machine-card p{font-size:.85rem;opacity:.8;}
+.trust-strip{display:flex;gap:20px;flex-wrap:wrap;margin-top:32px;}
+.trust-item{display:flex;align-items:center;gap:8px;font-size:.82rem;opacity:.9;}
+.trust-item span:first-child{font-size:1.1rem;}
+section{padding:70px 5%;}
+.section-title{text-align:center;margin-bottom:50px;}
+.section-title h2{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:800;color:var(--dark);margin-bottom:10px;}
+.section-title h2 span{color:var(--red);}
+.section-title p{color:var(--gray);font-size:1rem;max-width:550px;margin:0 auto;}
+.divider{width:60px;height:4px;background:linear-gradient(90deg,var(--red),var(--saffron));border-radius:2px;margin:14px auto 0;}
+.about{background:var(--light);}
+.about-grid{display:flex;gap:50px;align-items:center;flex-wrap:wrap;}
+.about-text{flex:1;min-width:260px;}
+.about-text h3{font-size:1.5rem;font-weight:700;color:var(--red);margin-bottom:14px;}
+.about-text p{color:var(--gray);line-height:1.8;margin-bottom:16px;font-size:.97rem;}
+.about-stats{flex:1;min-width:240px;display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.stat-box{background:var(--white);border-radius:14px;padding:24px;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,.07);}
+.stat-box .num{font-size:2rem;font-weight:800;color:var(--red);}
+.stat-box .lbl{font-size:.8rem;color:var(--gray);margin-top:4px;}
+.cat-tabs{display:flex;gap:0;flex-wrap:wrap;border-bottom:2px solid #e0e0e0;margin-bottom:32px;}
+.cat-tab{padding:12px 22px;background:transparent;border:none;border-bottom:3px solid transparent;margin-bottom:-2px;color:var(--gray);font-weight:600;font-size:.9rem;cursor:pointer;transition:.2s;text-transform:uppercase;letter-spacing:.5px;}
+.cat-tab.active{color:var(--red);border-bottom:3px solid var(--red);}
+.cat-tab:hover{color:var(--red);}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:20px;}
+.product-card{background:var(--white);border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.07);transition:.3s;border:1px solid #f0e8e8;cursor:pointer;}
+.product-card:hover{transform:translateY(-5px);box-shadow:0 8px 24px rgba(204,0,0,.15);}
+.product-img{background:#fff;height:200px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border-bottom:1px solid #f5f5f5;}
+.product-img img{width:100%;height:100%;object-fit:contain;padding:12px;transition:.3s;}
+.product-card:hover .product-img img{transform:scale(1.06);}
+.badge{position:absolute;top:10px;right:10px;background:var(--red);color:#fff;font-size:.68rem;font-weight:700;padding:3px 8px;border-radius:10px;}
+.badge.sale{background:var(--saffron);}
+.product-info{padding:14px 16px 16px;}
+.product-info h3{font-size:.88rem;font-weight:700;color:var(--dark);margin-bottom:6px;line-height:1.4;}
+.mrp-label{font-size:.72rem;color:#aaa;margin-bottom:2px;}
+.price-row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-top:4px;}
+.price{font-size:1rem;font-weight:800;color:var(--red);}
+.price-old{font-size:.78rem;color:#aaa;text-decoration:line-through;margin-left:4px;}
+.enquire-btn{background:var(--red);color:#fff;padding:6px 14px;border-radius:16px;font-size:.78rem;font-weight:600;border:none;cursor:pointer;transition:.2s;}
+.enquire-btn:hover{background:var(--dark-red);}
+.why{background:var(--light);}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:22px;}
+.why-card{background:var(--white);border-radius:16px;padding:28px 22px;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,.06);transition:.3s;}
+.why-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(204,0,0,.12);}
+.why-icon{font-size:2.5rem;margin-bottom:14px;}
+.why-card h3{font-size:.95rem;font-weight:700;color:var(--dark);margin-bottom:8px;}
+.why-card p{font-size:.82rem;color:var(--gray);line-height:1.6;}
+.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px;}
+.tcard{background:var(--white);border-radius:16px;padding:26px;box-shadow:0 2px 14px rgba(0,0,0,.07);border-left:4px solid var(--red);}
+.stars{color:var(--gold);font-size:1rem;margin-bottom:12px;}
+.tcard p{font-size:.9rem;color:var(--gray);line-height:1.7;font-style:italic;margin-bottom:16px;}
+.tcard .customer{font-weight:700;font-size:.85rem;color:var(--dark);}
+.tcard .role{font-size:.78rem;color:var(--gray);}
+.contact{background:linear-gradient(135deg,#1a0000,#8B0000);color:var(--white);}
+.contact .section-title h2{color:#fff;}
+.contact .section-title p{color:rgba(255,255,255,.75);}
+.contact .divider{background:linear-gradient(90deg,var(--gold),var(--saffron));}
+.contact-grid{display:flex;gap:40px;flex-wrap:wrap;}
+.contact-info{flex:1;min-width:260px;}
+.contact-item{display:flex;gap:16px;align-items:flex-start;margin-bottom:24px;}
+.contact-icon{font-size:1.6rem;flex-shrink:0;margin-top:2px;}
+.contact-item h4{font-size:.9rem;font-weight:700;color:var(--gold);margin-bottom:4px;}
+.contact-item p,.contact-item a{font-size:.9rem;color:rgba(255,255,255,.85);line-height:1.6;}
+.contact-actions{flex:1;min-width:240px;display:flex;flex-direction:column;gap:14px;justify-content:center;}
+.cta-btn{display:flex;align-items:center;gap:12px;padding:16px 24px;border-radius:14px;font-weight:700;font-size:.95rem;transition:.3s;cursor:pointer;}
+.cta-call{background:var(--white);color:var(--red);}
+.cta-call:hover{background:var(--gold);color:#fff;}
+.cta-wa{background:#25D366;color:#fff;}
+.cta-wa:hover{background:#128C7E;}
+.cta-map{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.3);}
+.cta-map:hover{background:rgba(255,255,255,.2);}
+.cta-icon{font-size:1.3rem;}
+footer{background:#111;color:rgba(255,255,255,.5);text-align:center;padding:20px 5%;font-size:.82rem;}
+footer span{color:var(--red);}
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:999;align-items:center;justify-content:center;}
+.modal-overlay.active{display:flex;}
+.modal{background:#fff;border-radius:20px;padding:36px;max-width:420px;width:90%;text-align:center;position:relative;}
+.modal h3{font-size:1.3rem;font-weight:800;color:var(--dark);margin-bottom:8px;}
+.modal p{color:var(--gray);font-size:.9rem;margin-bottom:20px;}
+.modal-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+.modal-close{position:absolute;top:14px;right:18px;font-size:1.4rem;cursor:pointer;color:var(--gray);}
+@media(max-width:700px){.hero{flex-direction:column;text-align:center;padding:60px 5% 50px;}.hero p{margin:0 auto 28px;}.hero-btns{justify-content:center;}.nav-links{display:none;}.trust-strip{justify-content:center;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">
+    <svg width="44" height="44" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="outerRed2" cx="42%" cy="35%" r="70%"><stop offset="0%" stop-color="#ff3333"/><stop offset="55%" stop-color="#cc0000"/><stop offset="100%" stop-color="#880000"/></radialGradient>
+        <radialGradient id="bezel2" cx="38%" cy="28%" r="72%"><stop offset="0%" stop-color="#ffffff"/><stop offset="18%" stop-color="#daeeff"/><stop offset="40%" stop-color="#7ab8e8"/><stop offset="62%" stop-color="#2e7cc4"/><stop offset="80%" stop-color="#1356a2"/><stop offset="100%" stop-color="#0a3478"/></radialGradient>
+        <radialGradient id="innerRed2" cx="40%" cy="33%" r="65%"><stop offset="0%" stop-color="#ff5555"/><stop offset="45%" stop-color="#dd0000"/><stop offset="100%" stop-color="#7a0000"/></radialGradient>
+        <radialGradient id="gChrome" cx="35%" cy="25%" r="75%"><stop offset="0%" stop-color="#ffffff"/><stop offset="20%" stop-color="#e8e8e8"/><stop offset="45%" stop-color="#aaaaaa"/><stop offset="70%" stop-color="#787878"/><stop offset="85%" stop-color="#555555"/><stop offset="100%" stop-color="#333333"/></radialGradient>
+        <radialGradient id="gDome" cx="38%" cy="25%" r="72%"><stop offset="0%" stop-color="#ff9999"/><stop offset="18%" stop-color="#ff4444"/><stop offset="50%" stop-color="#dd0000"/><stop offset="80%" stop-color="#aa0000"/><stop offset="100%" stop-color="#770000"/></radialGradient>
+        <radialGradient id="gGloss" cx="38%" cy="28%" r="55%"><stop offset="0%" stop-color="rgba(255,255,255,0.75)"/><stop offset="45%" stop-color="rgba(255,255,255,0.15)"/><stop offset="100%" stop-color="rgba(255,255,255,0)"/></radialGradient>
+        <linearGradient id="gSLetter" x1="30%" y1="0%" x2="70%" y2="100%"><stop offset="0%" stop-color="#ffffff"/><stop offset="50%" stop-color="#ffdddd"/><stop offset="100%" stop-color="#ffffff"/></linearGradient>
+        <filter id="fS" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.5)"/></filter>
+      </defs>
+      <circle cx="30" cy="30" r="30" fill="url(#gChrome)"/>
+      <circle cx="30" cy="30" r="25.5" fill="url(#gDark)" style="fill:#111"/>
+      <circle cx="30" cy="30" r="23.5" fill="url(#gDome)"/>
+      <ellipse cx="23" cy="19" rx="13" ry="8" fill="url(#gGloss)" transform="rotate(-15,23,19)"/>
+      <ellipse cx="30" cy="43" rx="14" ry="7" fill="rgba(0,0,0,0.18)"/>
+      <text x="30" y="43" font-family="Georgia, serif" font-size="32" font-weight="bold" text-anchor="middle" fill="url(#gSLetter)" filter="url(#fS)">S</text>
+    </svg>
+    <div class="brand">
+      <h1>Shri Sundaram Agencies</h1>
+      <p>Authorised Singer Dealer &middot; Tirunelveli</p>
+    </div>
+  </div>
+  <div class="nav-links">
+    <a href="#products">Products</a>
+    <a href="#why">Why Us</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <a href="https://maps.app.goo.gl/fWoqtAtEksFBQkw78" target="_blank" title="Find us on Google Maps" style="display:flex;align-items:center;justify-content:center;width:38px;height:38px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.35);border-radius:50%;transition:.2s;" onmouseover="this.style.background='rgba(255,255,255,0.3)'" onmouseout="this.style.background='rgba(255,255,255,0.15)'">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5" fill="white" stroke="none"/></svg>
+    </a>
+    <a href="https://wa.me/919443581567?text=Hello!%20I%20am%20interested%20in%20Singer%20Sewing%20Machines.%20Please%20share%20details." target="_blank" title="Chat on WhatsApp" style="display:flex;align-items:center;justify-content:center;width:38px;height:38px;background:#25D366;border:1px solid #1fad55;border-radius:50%;transition:.2s;" onmouseover="this.style.background='#1fad55'" onmouseout="this.style.background='#25D366'">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <a class="nav-cta" href="tel:+919443581567">&#128222; Enquire Now</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-text">
+    <div class="hero-badge">&#11088; Tirunelveli's Trusted Singer Dealer</div>
+    <h2>Stitch Your Dreams with <span>Singer Sewing Machines</span></h2>
+    <p>From homemakers to professional tailors — find the perfect Singer sewing machine at Shri Sundaram Agencies. Genuine products, expert guidance, and after-sales service you can count on.</p>
+    <div class="hero-btns">
+      <a class="btn-primary" href="#products">&#128722; Explore Machines</a>
+      <a class="btn-secondary" href="tel:+919443581567">&#128222; Call Us Today</a>
+    </div>
+    <div class="trust-strip">
+      <div class="trust-item"><span>&#9989;</span><span>Authorised Dealer</span></div>
+      <div class="trust-item"><span>&#128295;</span><span>After-Sales Service</span></div>
+      <div class="trust-item"><span>&#128230;</span><span>Genuine Products</span></div>
+      <div class="trust-item"><span>&#128205;</span><span>Tirunelveli Local Shop</span></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="machine-card">
+      <div style="width:100%;border-radius:12px;overflow:hidden;margin-bottom:16px;max-height:180px;">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAHLUoh5OifjEiS0zOqSYyKAr9PYYGMngqMjFL0g5VzGmAGv-uRG3TJ-Nsy4WsMUBwLNZE_1DsFQASKbMjIb63XyHl9l2evIWq50w_w6CwUE7dByliLKdR32KrDYBVkds7J05CE=w640-h480-k-no" alt="Shri Sundaram Agencies Shop" style="width:100%;height:180px;object-fit:cover;display:block;"/>
+      </div>
+      <h3>Singer Sewing Machines</h3>
+      <p>Zig-Zag &middot; Straight Stitch &middot; Heavy Duty &middot; Industrial</p>
+      <br/>
+      <a class="btn-primary" style="display:inline-block;font-size:.85rem;padding:10px 22px;" href="#products">View All Models</a>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="section-title">
+    <h2>About <span>Shri Sundaram Agencies</span></h2>
+    <div class="divider"></div>
+    <p>Your neighbourhood Singer sewing machine specialist in Tirunelveli</p>
+  </div>
+  <div class="about-grid">
+    <div class="about-text">
+      <h3>Serving Tirunelveli with Pride</h3>
+      <p>Shri Sundaram Agencies is an authorised Singer dealer located in the heart of Tirunelveli, Tamil Nadu. We have been the go-to destination for homemakers, hobbyists, and professional tailors who trust the Singer brand for quality and reliability.</p>
+      <p>From entry-level fashion makers to heavy-duty industrial machines, we carry the full Singer range. Our knowledgeable team helps you choose the right machine for your need and budget, and our after-sales service ensures your machine keeps running perfectly for years.</p>
+      <p>Visit us at our shop on S.N. High Road, opposite the Police Station, near Over Bridge — or simply give us a call!</p>
+    </div>
+    <div class="about-stats">
+      <div class="stat-box"><div class="num">170+</div><div class="lbl">Years of Singer Legacy</div></div>
+      <div class="stat-box"><div class="num">&#127942;</div><div class="lbl">Authorised Singer Dealer</div></div>
+      <div class="stat-box"><div class="num">500+</div><div class="lbl">Happy Customers</div></div>
+      <div class="stat-box"><div class="num">100%</div><div class="lbl">Genuine Products</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="products">
+  <div class="section-title">
+    <h2>Singer <span>Sewing Machines</span></h2>
+    <div class="divider"></div>
+    <p>Explore our complete range — sorted by price, lowest to highest</p>
+  </div>
+  <div class="cat-tabs">
+    <button class="cat-tab active" onclick="filterCat(this,'straight')">Straight Stitch</button>
+    <button class="cat-tab" onclick="filterCat(this,'artisan')">Artisan</button>
+    <button class="cat-tab" onclick="filterCat(this,'industrial')">Industrial Machines</button>
+    <button class="cat-tab" onclick="filterCat(this,'zigzag')">Zig-Zag Fashion Maker</button>
+  </div>
+  <div class="products-grid" id="products-grid"></div>
+</section>
+
+<section class="why" id="why">
+  <div class="section-title">
+    <h2>Why Choose <span>Us?</span></h2>
+    <div class="divider"></div>
+    <p>We are more than just a shop — we are your sewing partner in Tirunelveli</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-card"><div class="why-icon">&#127942;</div><h3>Authorised Singer Dealer</h3><p>Every machine sold is 100% genuine with manufacturer warranty.</p></div>
+    <div class="why-card"><div class="why-icon">&#128295;</div><h3>After-Sales Service</h3><p>Trained technicians provide reliable maintenance and repair for all Singer models.</p></div>
+    <div class="why-card"><div class="why-icon">&#128172;</div><h3>Expert Guidance</h3><p>Not sure which machine to buy? Our team helps you pick the perfect one.</p></div>
+    <div class="why-card"><div class="why-icon">&#128205;</div><h3>Local and Trusted</h3><p>Proudly serving Tirunelveli families, homemakers, and tailors for years.</p></div>
+    <div class="why-card"><div class="why-icon">&#128176;</div><h3>Best Prices</h3><p>Genuine Singer machines at competitive prices with occasional discounts.</p></div>
+    <div class="why-card"><div class="why-icon">&#128230;</div><h3>Wide Range</h3><p>From beginner-friendly to heavy-duty industrial — we stock machines for every need.</p></div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="section-title">
+    <h2>What Our <span>Customers Say</span></h2>
+    <div class="divider"></div>
+    <p>Trusted by homemakers, hobbyists, and professional tailors across Tirunelveli</p>
+  </div>
+  <div class="testimonials-grid">
+    <div class="tcard"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"I bought a Singer Promise FM 1408 for home use. The staff explained everything patiently and even helped me learn the basics. Best shop in Tirunelveli!"</p><div class="customer">Lakshmi R.</div><div class="role">Homemaker, Tirunelveli</div></div>
+    <div class="tcard"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Running my tailoring shop for 5 years with a Singer Heavy Duty from Shri Sundaram. Excellent after-sales support whenever needed. Highly recommended!"</p><div class="customer">Murugan S.</div><div class="role">Professional Tailor, Tirunelveli</div></div>
+    <div class="tcard"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"I wanted to learn stitching as a hobby and they guided me to the perfect beginner machine at a great price. Very friendly and knowledgeable team!"</p><div class="customer">Priya K.</div><div class="role">Sewing Enthusiast, Tirunelveli</div></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="section-title">
+    <h2>Visit Us or <span style="color:var(--gold)">Get in Touch</span></h2>
+    <div class="divider"></div>
+    <p>We are right here in Tirunelveli — come see us or reach out anytime</p>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="contact-item"><div class="contact-icon">&#128205;</div><div><h4>Address</h4><p>101, S.N. High Road, Opp. Police Station,<br>Near Over Bridge,<br>Tirunelveli, Tamil Nadu 627001</p></div></div>
+      <div class="contact-item"><div class="contact-icon">&#128222;</div><div><h4>Phone</h4><a href="tel:+919443581567" style="color:var(--gold);font-weight:700;">+91 94435 81567</a></div></div>
+      <div class="contact-item"><div class="contact-icon">&#128336;</div><div><h4>Working Hours</h4><p>Mon to Sat: 9:00 AM to 7:00 PM<br>Sunday: Closed</p></div></div>
+      <div class="contact-item"><div class="contact-icon">&#129525;</div><div><h4>Speciality</h4><p>Singer Sewing Machines — Zig-Zag, Straight Stitch, Heavy Duty, Industrial</p></div></div>
+    </div>
+    <div class="contact-actions">
+      <a class="cta-btn cta-call" href="tel:+919443581567"><span class="cta-icon">&#128222;</span><div><div style="font-size:.75rem;opacity:.7;">Call Us Now</div><div>+91 94435 81567</div></div></a>
+      <a class="cta-btn cta-wa" href="https://wa.me/919443581567?text=Hello!%20I%20am%20interested%20in%20Singer%20Sewing%20Machines.%20Please%20share%20details." target="_blank"><span class="cta-icon">&#128172;</span><div><div style="font-size:.75rem;opacity:.8;">WhatsApp Us</div><div>Chat on WhatsApp</div></div></a>
+      <a class="cta-btn cta-map" href="https://maps.app.goo.gl/fWoqtAtEksFBQkw78" target="_blank"><span class="cta-icon">&#128506;</span><div><div style="font-size:.75rem;opacity:.7;">Find Us</div><div>Open in Google Maps</div></div></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 <span>Shri Sundaram Agencies</span> &middot; Authorised Singer Dealer &middot; Tirunelveli, Tamil Nadu &middot; +91 94435 81567</p>
+</footer>
+
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <span class="modal-close" onclick="closeModal()">&#215;</span>
+    <div style="font-size:3rem;margin-bottom:12px;">&#129525;</div>
+    <h3 id="modal-title">Enquire Now</h3>
+    <p id="modal-desc">Interested? Contact us via call or WhatsApp!</p>
+    <div class="modal-btns">
+      <a class="cta-btn cta-call" style="border-radius:12px;padding:12px 20px;" href="tel:+919443581567">&#128222; Call Now</a>
+      <a id="modal-wa" class="cta-btn cta-wa" style="border-radius:12px;padding:12px 20px;" href="#" target="_blank">&#128172; WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<script>
+var B = 'https://shop.singerindia.com/wp-content/uploads/sites/2/';
+
+var PD = {
+  zigzag: [
+    {n:'SINGER Start FM 1304',p:15560,i:'2025/01/singer-start-fm-1304-433x433.jpg'},
+    {n:'SINGER Promise FM 1408',p:15750,i:'2025/01/singer-promise-fm-1408-433x433.jpg',b:'Popular'},
+    {n:'SINGER Promise FM 1409',p:16120,i:'2025/01/SINGER-Promise-FM-1409-433x433.jpg'},
+    {n:'SINGER Promise FM 1412',p:16500,i:'2025/01/SINGER-Promise-FM-1412-433x433.jpg'},
+    {n:'SINGER FM 8280',p:18750,i:'2025/01/SINGER-FM-8280-433x433.jpg'},
+    {n:'SINGER Elite',p:19310,m:20600,i:'2025/01/SINGER-Elite-433x433.jpg',b:'6% Off'},
+    {n:'FM SINGER New Elite',p:20600,i:'2025/12/SINGER-Elite-433x433.jpg'},
+    {n:'SINGER M 3305',p:20250,i:'2025/01/singer-m-3305-1-433x433.jpg'},
+    {n:'SINGER M 3505',p:22120,i:'2025/01/SINGER-M-3505-1-433x433.jpg'},
+    {n:'SINGER Talent FM 3321',p:23150,i:'2025/01/SINGER-Talent-FM-3321-433x433.jpg'},
+    {n:'SINGER M 2605',p:23430,m:25000,i:'2025/01/SINGER-M-2605-433x433.jpg',b:'6% Off'},
+    {n:'SINGER 4002 Heavy Duty',p:25000,i:'2026/04/4002-433x433.jpg'},
+    {n:'SINGER M 3330',p:28120,i:'2025/01/SINGER-M-3330-1-433x433.jpg'},
+    {n:'SINGER 4023 Heavy Duty',p:30000,i:'2026/04/4023-433x433.jpg',b:'Top Pick'},
+    {n:'Husqvarna Onyx 15',p:32810,i:'2025/02/husqvarna-onyx-15-433x433.jpg',b:'Hot'},
+    {n:'Husqvarna Onyx 25',p:37500,i:'2025/02/husqvarna-onyx-25-433x433.jpg',b:'Hot'}
+  ],
+  straight: [
+    {n:'Merritt Tailor Head',p:4160,i:'2025/03/Merritt-Tailor-Head-433x433.jpeg'},
+    {n:'Merritt Magic Head',p:4270,i:'2025/03/merritt-magic-head-433x433.jpg'},
+    {n:'SINGER Magna Head',p:4210,i:'2025/03/singer-magna-head-433x433.jpg'},
+    {n:'SINGER Tailor Head Brown',p:4500,i:'2025/03/Singer-Tailor-Brown-433x326.png'},
+    {n:'SINGER Tailor Head Red',p:4500,i:'2025/03/Singer-Tailor-Red-433x335.jpg'},
+    {n:'SINGER Tailor Head Green',p:4500,i:'2025/03/Singer-Tailor-Green-433x335.jpg'},
+    {n:'SINGER Tailor Head Blue',p:4500,i:'2025/04/Singer-Tailor-Blue-433x321.jpg'},
+    {n:'Merritt Tailor Head Brown',p:4500,i:'2025/03/Merritt-Tailor-Brown-433x304.png'},
+    {n:'Merritt Tailor Head Red',p:4500,i:'2025/03/Merritt-Tailor-Red-433x298.png'},
+    {n:'Merritt Tailor Head Green',p:4500,i:'2025/04/Merritt-Tailor-Green-433x294.png'},
+    {n:'Merritt Tailor Head Blue',p:4500,i:'2025/03/Merritt-Tailor-Blue-433x329.png'},
+    {n:'SINGER Tailor with Link Motion',p:4690,i:'2025/12/SINGER-TAILOR-WITH-LINK-433x433.jpg'},
+    {n:'Merritt Magic Premium Head',p:4860,i:'2025/03/Merritt-magic-premium-head-433x433.jpeg'},
+    {n:'SINGER Solo Red Unit Pack',p:5320,i:'2025/12/singer-solo-433x433.jpg'},
+    {n:'SINGER Sonata Unit Pack',p:5850,i:'2025/03/singer-sonata-unit-pack-433x433.jpg'},
+    {n:'SINGER Magna Supreme Head',p:5800,i:'2025/02/magna-supreme-head-433x433.jpeg'},
+    {n:'Merritt Magic Supreme Head',p:5800,i:'2025/03/Merritt-Magic-supreme-head-433x433.jpeg'},
+    {n:'SINGER Sonata Supreme Head',p:5990,i:'2025/03/Singer-Sonata-Supreme-Head-433x433.jpeg'},
+    {n:'Merritt Sonata Supreme Head',p:5990,i:'2025/03/meritt-sonata-Supreme-head-433x433.jpg'},
+    {n:'SINGER Sonata Supreme Unit Pack',p:6310,i:'2025/03/Singer-Sonata-Supreme-Unit-Pack-433x433.jpeg'},
+    {n:'SINGER Popular Unit Pack',p:6350,i:'2025/03/singer-popular-unit-pack-433x433.jpg'},
+    {n:'SINGER Magna Supreme Unit Pack',p:6640,i:'2025/03/singer-magna-supreme-unit-pack-433x433.jpg'},
+    {n:'SINGER Tailor Mate',p:6990,i:'2025/12/singer-tailor-mate-433x433.jpg',b:'Hot'},
+    {n:'Merritt Tailor Master Head',p:7170,i:'2025/03/Merritt-Tailor-Master-head-433x433.jpeg'},
+    {n:'SINGER Sovereign Head',p:7390,i:'2025/03/singer-sovereign-head--433x433.jpg'},
+    {n:'SINGER Merritt 89 ND 12',p:9375,i:'2020/09/1_1_18-433x288.jpg'},
+    {n:'SINGER Sovereign Unit Pack',p:9460,i:'2025/03/singer-sovereign-unit-pack-433x433.jpg'}
+  ],
+  artisan: [
+    {n:'Merritt Stitch Master Head',p:5520,i:'2025/03/Merritt-Stitch-Master-head-433x433.jpg'},
+    {n:'Merritt Finedge Head',p:5790,i:'2025/03/Merritt-Finedge-433x433.jpg'},
+    {n:'SINGER Finedge Head',p:5790,i:'2025/03/merritt-finedge-head-433x433.jpg'},
+    {n:'Merritt Universal Head Indian Hook',p:7110,i:'2025/03/Merritt-Universal-head-with-Indian-hook-set-433x433.jpg'},
+    {n:'Merritt Universal Unimet',p:7340,i:'2025/03/Merritt-Universal-Unimet-433x433.jpg'},
+    {n:'Merritt Universal Supreme Head',p:7490,i:'2025/03/Merritt-Universal-Supreme-433x433.jpg'},
+    {n:'SINGER Universal Supreme',p:7490,i:'2025/02/universal-supreme-433x433.jpg'},
+    {n:'Merritt Workmate Head Indian Set',p:7790,i:'2025/03/Merritt-workmate-head-with-indian-hook-set-433x433.jpg'},
+    {n:'SINGER Workmate Head Indian Set',p:7790,i:'2025/03/Singer-Workmate-head-with-indian-hook-set-433x433.jpg'},
+    {n:'SINGER Stitch Master Head',p:7980,i:'2025/03/Singer-Stitch-Master-Head-433x433.jpg'},
+    {n:'Merritt Stitch Master Gear Head',p:8660,i:'2025/03/Merritt-Stitch-Master-head-with-Gear-head-433x433.jpg'},
+    {n:'SINGER Stitch Master Gear Head',p:8660,i:'2025/03/Singer-Stitch-Master-With-Gear-Head-433x433.jpg'},
+    {n:'Merritt Craftman Head',p:9780,i:'2025/03/Merritt-Craftman-Head-433x433.jpg'},
+    {n:'Merritt Bag Closer Single Needle',p:9810,i:'2025/03/Merritt-Bag-Closer-Single-needle-433x433.jpg'}
+  ],
+  industrial: [
+    {n:'9900',p:30920,i:'2025/02/9900-433x433.jpg'},
+    {n:'9900-Y',p:30920,i:'2025/02/9900-Y-433x433.jpg'},
+    {n:'SS 9900',p:30920,i:'2025/02/SS9900-1-433x433.jpg'},
+    {n:'9900H-Y Large Hook',p:32800,i:'2025/02/9900H-Y-Large-Hook-433x433.jpg'},
+    {n:'SS 9900 T',p:33650,i:'2025/02/SS-9900-T-433x433.jpg'},
+    {n:'S 8140',p:43110,i:'2025/02/8140-433x433.jpg'},
+    {n:'S 8140-Y',p:43110,i:'2025/02/8140-y-433x433.jpg'},
+    {n:'S 8150',p:44050,i:'2025/02/8150-433x433.jpg'},
+    {n:'S 8150-Y',p:44050,i:'2025/02/8150-y-433x433.jpg'},
+    {n:'S 20U-53-Y',p:45920,i:'2025/02/S-20U-53-Y-433x433.jpg'},
+    {n:'S-0303',p:46860,i:'2025/02/S-0303-433x433.jpg'},
+    {n:'SS 9900 T-3',p:51550,i:'2025/02/SS-9900-T-3-433x433.jpg'},
+    {n:'SS 9900 T4',p:56240,i:'2025/02/9900t4-433x433.jpg'},
+    {n:'SS 9900 T-4 Pro',p:56240,i:'2025/02/SS9900T4-PRO-433x433.jpg',b:'Pro'},
+    {n:'S 5400',p:57170,i:'2025/02/s5400-433x433.jpg'},
+    {n:'S 5400-Y',p:57170,i:'2025/02/s5400-y-433x433.jpg'},
+    {n:'S 842',p:76860,i:'2025/02/s842-433x433.jpg'},
+    {n:'S 1377D-Y',p:89050,i:'2025/02/S-1377D-Y-433x433.jpg'},
+    {n:'S 845',p:100300,i:'2025/02/s845-433x433.jpg'},
+    {n:'S-1404 PSF',p:120920,i:'2025/02/s1404psf-433x433.jpg'},
+    {n:'S 1412 P',p:130300,i:'2025/02/S-1412-P-433x433.jpg'},
+    {n:'S-261-21',p:132170,i:'2025/02/s-261-21-433x433.jpg'},
+    {n:'S-261-23',p:142490,i:'2025/02/s-261-23-433x433.jpg'},
+    {n:'SE-600 D',p:144360,i:'2025/02/se600d-433x433.jpg'},
+    {n:'S 781F-Y',p:177170,i:'2025/02/S-781F-Y-433x433.jpg'},
+    {n:'SE-1900',p:231550,i:'2025/02/se1900-433x433.jpg'},
+    {n:'SE-1903',p:242800,i:'2025/02/se1903-433x433.jpg'},
+    {n:'SE 1790',p:373110,i:'2025/02/se1790-433x433.jpg'},
+    {n:'SE 299',p:659990,i:'2025/02/se299-433x433.jpg'}
+  ]
+};
+
+function fp(x) {
+  return '\u20B9' + x.toLocaleString('en-IN');
+}
+
+function filterCat(btn, cat) {
+  var tabs = document.querySelectorAll('.cat-tab');
+  for (var t = 0; t < tabs.length; t++) tabs[t].classList.remove('active');
+  btn.classList.add('active');
+  renderCat(cat);
+}
+
+function renderCat(cat) {
+  var grid = document.getElementById('products-grid');
+  var list = PD[cat].slice().sort(function(a, b) { return a.p - b.p; });
+  var html = '';
+  for (var i = 0; i < list.length; i++) {
+    var prod = list[i];
+    var bHtml = '';
+    if (prod.b) {
+      var isSale = prod.b.indexOf('%') !== -1 || prod.b === 'Hot';
+      bHtml = '<span class="badge' + (isSale ? ' sale' : '') + '">' + prod.b + '</span>';
+    }
+    var mHtml = prod.m ? '<div class="price-old">' + fp(prod.m) + '</div>' : '';
+    html += '<div class="product-card" data-i="' + i + '" data-c="' + cat + '">';
+    html += '<div class="product-img">';
+    html += '<img src="' + B + prod.i + '" alt="' + prod.n + '" loading="lazy">';
+    html += bHtml + '</div>';
+    html += '<div class="product-info">';
+    html += '<h3>' + prod.n + '</h3>';
+    html += '<div class="mrp-label">MRP (Incl. all taxes)</div>';
+    html += '<div class="price-row">';
+    html += '<div style="display:flex;align-items:center;gap:6px;"><div class="price">' + fp(prod.p) + '</div>' + mHtml + '</div>';
+    html += '<button class="enquire-btn">Enquire</button>';
+    html += '</div></div></div>';
+  }
+  grid.innerHTML = html;
+  var cards = grid.querySelectorAll('.product-card');
+  for (var j = 0; j < cards.length; j++) {
+    (function(card) {
+      card.addEventListener('click', function() {
+        var idx = parseInt(card.getAttribute('data-i'));
+        var c = card.getAttribute('data-c');
+        var sorted = PD[c].slice().sort(function(a, b) { return a.p - b.p; });
+        openModal(sorted[idx].n, fp(sorted[idx].p));
+      });
+    })(cards[j]);
+  }
+}
+
+function openModal(name, price) {
+  document.getElementById('modal-title').textContent = name + ' — ' + price;
+  document.getElementById('modal-desc').textContent = 'Interested in the ' + name + '? Reach out to us for availability!';
+  var msg = encodeURIComponent('Hello! I am interested in ' + name + ' (' + price + '). Please share details.');
+  document.getElementById('modal-wa').href = 'https://wa.me/919443581567?text=' + msg;
+  document.getElementById('modal').classList.add('active');
+}
+
+function closeModal() {
+  document.getElementById('modal').classList.remove('active');
+}
+
+document.getElementById('modal').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
+});
+
+renderCat('straight');
+</script>
+</body>
+</html>
